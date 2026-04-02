@@ -1,24 +1,48 @@
-# 引き継ぎメモ (2026-04-02 22:25)
+# 引き継ぎメモ (2026-04-03 02:12 更新)
 
-## 現在の状況と問題点
-1. **Googleスプレッドシートへのデータ同期問題**: 
-   - GitHubリポジトリが非公開設定のため、初期に提案したGoogle Apps Script（URLから直接CSVを読むスクリプト）で `404 Not Found` エラーが発生しました。
-2. **GitHubへのPushブロックエラー**:
-   - 本日16:16に `.github/workflows/daily-research.yml` (GitHub Actionsの定期実行ファイル) がコミットされていました。
-   - 現在のユーザーのGitHubトークンには `workflow` 権限がないため、これが原因で **すべてのローカル変更のGitHubへのPushが拒否** されていました。
-   - ※ユーザー様は作成に心当たりがないとのこと。過去のAIとのチャット等で自動的に作られた可能性があります。
+## 現在の状況
 
-## 実施した解決策（PC移行後の作業内容）
-1. **Pushブロックの解除**:
-   - エラーの原因となっていた謎のファイル `.github/workflows/daily-research.yml` をGitの履歴から削除し、その他のすべての更新データ（CSVの分割・今日の日報・この引き継ぎメモ）を正常に `git push` できる状態に修正しました。
-2. **スプレッドシート同期の解決策の用意**:
-   - 外部通信（GitHub等へのアクセス）を一切行わずにデータをスプレッドシートへ流し込める完全版スクリプトをローカルに生成しました。
-   - ファイル場所: `C:\Users\0000429445\Documents\GitHub\SESSHUU-ANIMA-RESEARCH\SyncScript.txt`
+### ✅ 完了済み
+1. **スプレッドシート（Research_Data_DB）への同期スクリプト**: `SyncScript.txt` で全5シートへの書き込みに成功。
+2. **Apps Scriptの使い方**: `SyncScript.txt` の中身をApps Scriptに貼り付け → 関数 `runSync` を実行するだけ。
 
-## PC変更後に行うネクストステップ
-新しいPCをお使いになる際、以下の手順から再開してください。
+### 🔴 未解決：KAWAIデータ不足（70件以上 → 11件しかない）
+- **PC B（別PC）で生成した70件以上のリサーチ結果**が、GitHubにPushされていない。
+- 現在のCSV（`RESEARCH_KAWAI.csv`）には11件しか含まれていない。
+- `SyncScript.txt` も同じ11件のデータしか持っていない。
 
-1. スプレッドシート（`Research_Data_DB`）の「拡張機能」>「Apps Script」画面を開き、エラーの出る既存のコードをすべて消去します。
-2. 本リポジトリ内の `SyncScript.txt` を開き、中身のスクリプトをすべてコピー（Ctrl+A → Ctrl+C）します。
-3. Apps Scriptの画面に貼り付けして、「実行（▷）」ボタンを押します。
-4. （これだけで通信不要で5つのタブすべてに日本語データが完璧に格納されます）
+## PC B で実行すべきこと（4/6頃）
+
+### STEP 1: データの確認
+```powershell
+cd "$env:USERPROFILE\OneDrive\ドキュメント\GitHub\KAWAI-RESEARCH"
+Get-Content RESEARCH_KAWAI.csv | Measure-Object -Line
+```
+→ 70件以上あることを確認する。
+
+### STEP 2: GitHubにPush
+```powershell
+git add .
+git commit -m "Add full 70+ KAWAI research data"
+git push
+```
+
+### STEP 3: SyncScript.txt の更新
+- CSVデータが増えた場合、`SyncScript.txt` も更新が必要。
+- Antigravityに「CSVデータをSyncScript.txtに反映して」と依頼する。
+
+### STEP 4: PC C（自宅PC）で同期
+```powershell
+cd "$env:USERPROFILE\OneDrive\ドキュメント\GitHub\KAWAI-RESEARCH"
+git pull
+```
+→ その後、スプレッドシートのApps Scriptで `runSync` を再実行。
+
+## スプレッドシート情報
+- 名称: `Research_Data_DB`
+- タブ: KAWAI, YANAGI, TOMOYA, TERAMACHI, WEBER
+- 同期方法: `SyncScript.txt` → Apps Script → `runSync`
+
+## 参照チャット
+- Antigravity チャットID: `410adb4e-934f-4a01-98ee-2017ba115fa9`
+- 内容: GitHub pull/push、日記整理、スプレッドシート同期、KAWAIデータ不足の調査
