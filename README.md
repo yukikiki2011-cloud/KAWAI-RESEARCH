@@ -12,10 +12,15 @@
 - **TERAMACHI** ／ SEO・言語の達人（コンテンツ構造・SEO・文章）
 - **WEBER** ／ ウェビナー設計士（コミュニティ設計・体験デザイン）
 
-## データベース・メインファイル
+## データベース・構成ファイル
 
-- [`talent_research_database.csv`](./talent_research_database.csv)
-  - メンバーの公開投稿（X/note等）からのリサーチ結果をまとめたスプレッドシート形式のデータ。
+メンバーごとに個別のリサーチデータベースを用意しています。
+
+- [**RESEARCH_KAWAI.csv**](./RESEARCH_KAWAI.csv) ／ デザイン・ビジュアル・Claude Code
+- [**RESEARCH_YANAGI.csv**](./RESEARCH_YANAGI.csv) ／ AI実装・Web技術・ツール活用
+- [**RESEARCH_TOMOYA.csv**](./RESEARCH_TOMOYA.csv) ／ 戦略・キャリア・ビジネス・トレンド
+- [**RESEARCH_TERAMACHI.csv**](./RESEARCH_TERAMACHI.csv) ／ SEO・ライティング・ハルシネーション対策
+- [**RESEARCH_WEBER.csv**](./RESEARCH_WEBER.csv) ／ ウェビナー・コミュニティ・体験設計
 
 ## 構成
 
@@ -28,8 +33,8 @@
 
 ## 重要メモ
 
-- **Claude Code 辞典 (by KAWAI)**: [https://claude-code-dictionary.pages.dev/](https://claude-code-dictionary.pages.dev/)
-  - Claude Code の導入・設定・新機能を網羅した、毎日更新される重要リソース。
+- **Claude Code Guide — 日本語ではじめる使い方とコマンド図鑑 (by KAWAI)**: [https://claude-code-dictionary.pages.dev/](https://claude-code-dictionary.pages.dev/)
+  - Claude Code の導入・設定・新機能を網羅した重要リソース。**毎日 23:00 に更新チェックを実施。**
 
 ---
 

@@ -1,0 +1,524 @@
+﻿function runSync() {
+  var db = {
+    "YANAGI":  [
+                   {
+                       "メディア":  "X",
+                       "投稿日（推定）":  "2026-03-30",
+                       "タイトル／本文（抜粋）":  "二本柳 亮（YANAGI）プロフィール：シンガーソングライター、AI・DX推進パートナー。SHIFT AI認定講師。",
+                       "カテゴリ":  "AI/クリエイティブ",
+                       "URL":  "https://x.com/ryonihonyanagi",
+                       "メモ・要点":  "音楽とテクノロジーの融合、アーティスト向けDX推進の基軸。",
+                       "チェックすべき関連サイト":  "https://x.com/yanagi_shiftai",
+                       "重要なワード":  "Art DX, AIエージェント, SHIFTAI",
+                       "今後深堀すべきポイント":  "表現者の感性と技術力の融合"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-12-06",
+                       "タイトル／本文（抜粋）":  "NotebookLMにDeep Research機能が追加！使い方のコツやGemini・ChatGPTとの違いまで解説",
+                       "カテゴリ":  "Gemini/ノウハウ",
+                       "URL":  "https://shift-ai.co.jp/blog/43403/",
+                       "メモ・要点":  "NotebookLMのDeep Research機能は数百のWebサイトを自動調査し、信頼できる情報源付きのレポートを作成できる。",
+                       "チェックすべき関連サイト":  "NotebookLM(https://notebooklm.google.com)",
+                       "重要なワード":  "Gemini",
+                       "今後深堀すべきポイント":  "Gemini の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-08-21",
+                       "タイトル／本文（抜粋）":  "スプレッドシートのAI関数を使ってみてわかった！設定方法から活用方法まで",
+                       "カテゴリ":  "Gemini/ノウハウ",
+                       "URL":  "https://shift-ai.co.jp/blog/33929/",
+                       "メモ・要点":  "GoogleスプレッドシートでGeminiを直接利用できるAI関数機能。セル内で要約・分類・感情分析が可能。",
+                       "チェックすべき関連サイト":  "Google Workspace(https://workspace.google.com) / Workspace Labs(https://workspace.google.com/labs-sign-up)",
+                       "重要なワード":  "Gemini",
+                       "今後深堀すべきポイント":  "Gemini の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-08-21",
+                       "タイトル／本文（抜粋）":  "【未経験OK】AIエンジニアを目指せるプログラミングスクール10選！選び方のポイントも",
+                       "カテゴリ":  "AIキャリア・学習/ノウハウ",
+                       "URL":  "https://shift-ai.co.jp/blog/32359/",
+                       "メモ・要点":  "未経験者がAIエンジニアを目指すためのスクール10校を比較。",
+                       "チェックすべき関連サイト":  "SAMURAI ENGINEER(https://www.sejuku.net) / DMM WEBCAMP(https://web-camp.io) / TechAcademy(https://techacademy.jp) / キカガク(https://longterm.kikagaku.ai)",
+                       "重要なワード":  "AIキャリア・学習, ノウハウ",
+                       "今後深堀すべきポイント":  "AIキャリア・学習 の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-08-12",
+                       "タイトル／本文（抜粋）":  "Geminiのファイル読み込みを完全マスター！方法やファイル形式・制限を解説",
+                       "カテゴリ":  "Gemini/ノウハウ",
+                       "URL":  "https://shift-ai.co.jp/blog/32275/",
+                       "メモ・要点":  "PDF・Excel・画像など複数形式に対応し最大100MBまでアップロード可能。",
+                       "チェックすべき関連サイト":  "Gemini(https://gemini.google.com) / Google AI Studio(https://ai.google.dev)",
+                       "重要なワード":  "Gemini",
+                       "今後深堀すべきポイント":  "Gemini の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-06-13",
+                       "タイトル／本文（抜粋）":  "NotebookLMで議事録を作成する方法！5つのプロンプトや注意点まで解説",
+                       "カテゴリ":  "Gemini/ノウハウ",
+                       "URL":  "https://shift-ai.co.jp/blog/26620/",
+                       "メモ・要点":  "NotebookLMはGoogleのAIノートツールで会議資料や音声データから自動で議事録作成が可能。",
+                       "チェックすべき関連サイト":  "NotebookLM(https://notebooklm.google.com)",
+                       "重要なワード":  "Gemini",
+                       "今後深堀すべきポイント":  "Gemini の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-06-11",
+                       "タイトル／本文（抜粋）":  "【使ってみた】OpenAIがo3-proをリリース！料金プランやo1-proとの違いも解説",
+                       "カテゴリ":  "ChatGPT/トレンド",
+                       "URL":  "https://shift-ai.co.jp/blog/26626/",
+                       "メモ・要点":  "OpenAI最高性能モデルo3-proはo1-proより高性能。",
+                       "チェックすべき関連サイト":  "OpenAI Pricing(https://platform.openai.com/docs/pricing)",
+                       "重要なワード":  "ChatGPT, トレンド",
+                       "今後深堀すべきポイント":  "ChatGPT の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-04-11",
+                       "タイトル／本文（抜粋）":  "Gemini APIの料金は？無料で使える範囲や使い方・3つの事例を紹介",
+                       "カテゴリ":  "Gemini/ノウハウ",
+                       "URL":  "https://shift-ai.co.jp/blog/20257/",
+                       "メモ・要点":  "Gemini APIは無料枠が充実。API料金体系・他社比較・事例を解説。",
+                       "チェックすべき関連サイト":  "Google AI Studio(https://aistudio.google.com) / Gemini API(https://ai.google.dev/gemini-api) / Google Colab(https://colab.google)",
+                       "重要なワード":  "Gemini",
+                       "今後深堀すべきポイント":  "Gemini の実務運用"
+                   }
+               ],
+    "KAWAI":  [
+                  {
+                      "メディア":  "X",
+                      "投稿日（推定）":  "2026-03-30",
+                      "タイトル／本文（抜粋）":  "川合 卓也（KAWAI）プロフィール：デザイナー、世界観構築のプロフェッショナル。",
+                      "カテゴリ":  "デザイン/AI",
+                      "URL":  "https://x.com/kawai_design",
+                      "メモ・要点":  "雪舟館の全ビジュアル・世界観を統括。AIを道具として使いこなす感性。",
+                      "チェックすべき関連サイト":  "https://github.com/yukikiki2011-cloud/KAWAI",
+                      "重要なワード":  "デザイン思考, 美意識, AIクリエイティブ",
+                      "今後深堀すべきポイント":  "AIによる能力拡張の具現化"
+                  },
+                  {
+                      "メディア":  "X",
+                      "投稿日（推定）":  "2026-04-02",
+                      "タイトル／本文（抜粋）":  "Claude Code Guide 更新：v2.1.90。新コマンド /powerup (インタラクティブレッスン) 追加。",
+                      "カテゴリ":  "AI/教育",
+                      "URL":  "https://claude-code-dictionary.pages.dev/",
+                      "メモ・要点":  "ターミナル内で Claude Code の使い方を学べるインタラクティブレッスン機能が実装された。",
+                      "チェックすべき関連サイト":  "https://claude-code-dictionary.pages.dev/",
+                      "重要なワード":  "/powerup, チュートリアル, v2.1.90",
+                      "今後深堀すべきポイント":  "インタラクティブ学習による導入コストの低減"
+                  },
+                  {
+                      "メディア":  "X",
+                      "投稿日（推定）":  "2026-04-02",
+                      "タイトル／本文（抜粋）":  "Claude Code辞典 v2.1.89 更新：Auto mode 再試行(rキー)、新フック PermissionDenied 反映。",
+                      "カテゴリ":  "デザイン/AI",
+                      "URL":  "https://x.com/kawai_design",
+                      "メモ・要点":  "辞典の毎日更新を継続。開発効率を向上させる最新設定の公開。",
+                      "チェックすべき関連サイト":  "https://claude-code-dictionary.pages.dev/",
+                      "重要なワード":  "Claude Code, v2.1.89, CSSフック",
+                      "今後深堀すべきポイント":  "新機能の実践活用"
+                  },
+                  {
+                      "メディア":  "X",
+                      "投稿日（推定）":  "2026-03-31",
+                      "タイトル／本文（抜粋）":  "Claude Code 内部ソースから101個のフィーチャーフラグを発見。KAIROS等の自律動作機能に注目。",
+                      "カテゴリ":  "AI/開発",
+                      "URL":  "https://x.com/kawai_design",
+                      "メモ・要点":  "KAIROS（バックグラウンド自律動作、GitHub Webhook連携）の可能性を考察。",
+                      "チェックすべき関連サイト":  "https://x.com/kawai_design",
+                      "重要なワード":  "KAIROS, フィーチャーフラグ, 自律動作",
+                      "今後深堀すべきポイント":  "リリース予定と影響の調査"
+                  },
+                  {
+                      "メディア":  "X",
+                      "投稿日（推定）":  "2026-03-30",
+                      "タイトル／本文（抜粋）":  "Claude Code 権限確認回避術：trash/ フォルダへの mv を活用し作業効率化。",
+                      "カテゴリ":  "AI/開発効率",
+                      "URL":  "https://x.com/kawai_design",
+                      "メモ・要点":  "rmによる頻繁な承認待ちを避け、mvで擬似ゴミ箱へ移動させる全自動整理テクニック。",
+                      "チェックすべき関連サイト":  "https://x.com/kawai_design",
+                      "重要なワード":  "mv, trashフォルダ, 自動化",
+                      "今後深堀すべきポイント":  "承認不要コマンドのワークフロー化"
+                  },
+                  {
+                      "メディア":  "SHIFT AI Blog",
+                      "投稿日（推定）":  "2026-03-28",
+                      "タイトル／本文（抜粋）":  "Googleの新音楽生成モデル「Lyria 3 Pro」とは？料金や使い方、Suno・Udioとの違いを解説！",
+                      "カテゴリ":  "Gemini/トレンド",
+                      "URL":  "https://shift-ai.co.jp/blog/55211/",
+                      "メモ・要点":  "Lyria 3 ProはGoogle DeepMindが発表した最新AI音楽生成モデル。最長3分のフルソング生成・楽曲構造のプロンプト指定・画像からの音楽生成に対応。",
+                      "チェックすべき関連サイト":  "Gemini(https://gemini.google.com) / Suno AI(https://suno.ai) / Udio(https://www.udio.com) / GUGA(https://guga.or.jp)",
+                      "重要なワード":  "Gemini, トレンド",
+                      "今後深堀すべきポイント":  "Gemini の実務運用"
+                  },
+                  {
+                      "メディア":  "SHIFT AI Blog",
+                      "投稿日（推定）":  "2026-03-26",
+                      "タイトル／本文（抜粋）":  "【2026年最新】Claude Codeの料金体系は？制限や用途別のおすすめプランも解説",
+                      "カテゴリ":  "Claude/ノウハウ",
+                      "URL":  "https://shift-ai.co.jp/blog/53404/",
+                      "メモ・要点":  "Claude Codeの料金体系を解説。個人向けProプラン（月額$20）からEnterprise向けまで複数プランがあり使用量に応じて選択可能。",
+                      "チェックすべき関連サイト":  "Claude公式(https://claude.com) / Claude APIドキュメント(https://platform.claude.com/docs)",
+                      "重要なワード":  "Claude, ノウハウ",
+                      "今後深堀すべきポイント":  "Claude の実務運用"
+                  },
+                  {
+                      "メディア":  "SHIFT AI Blog",
+                      "投稿日（推定）":  "2026-03-26",
+                      "タイトル／本文（抜粋）":  "インフォグラフィックを作成できる生成AI12選！コツや生成時に役立つプロンプト・注意点まで網羅",
+                      "カテゴリ":  "生成AIツール/ノウハウ",
+                      "URL":  "https://shift-ai.co.jp/blog/53417/",
+                      "メモ・要点":  "Gemini・ChatGPT・Canvaなど12のツールを比較紹介。構成案作成から微調整まで段階的なプロンプト活用法。",
+                      "チェックすべき関連サイト":  "Canva(https://www.canva.com) / Manus(https://manus.im) / Piktochart(https://piktochart.com) / Adobe Express(https://www.adobe.com/express) / Visme(https://www.visme.co)",
+                      "重要なワード":  "生成AIツール, ノウハウ",
+                      "今後深堀すべきポイント":  "生成AIツール の実務運用"
+                  },
+                  {
+                      "メディア":  "SHIFT AI Blog",
+                      "投稿日（推定）":  "2025-12-06",
+                      "タイトル／本文（抜粋）":  "Manusでスライドを自動生成する方法！生成のコツやコピペOKのプロンプトまで紹介",
+                      "カテゴリ":  "生成AIツール/ノウハウ",
+                      "URL":  "https://shift-ai.co.jp/blog/43721/",
+                      "メモ・要点":  "Manusはテーマから自動でプレゼン資料を生成するAIツール。構成設計から文章作成・デザインまで一貫して自動化。",
+                      "チェックすべき関連サイト":  "Manus(https://manus.im)",
+                      "重要なワード":  "生成AIツール, ノウハウ",
+                      "今後深堀すべきポイント":  "生成AIツール の実務運用"
+                  },
+                  {
+                      "メディア":  "SHIFT AI Blog",
+                      "投稿日（推定）":  "2025-08-20",
+                      "タイトル／本文（抜粋）":  "【画像を自由に操れる】画像生成AI「nano-banana」が登場！特徴や使い方を解説",
+                      "カテゴリ":  "生成AIツール/トレンド",
+                      "URL":  "https://shift-ai.co.jp/blog/34141/",
+                      "メモ・要点":  "Nano Banana ProはGemini 3 Pro基盤のGoogle開発画像生成モデル。日本語処理向上・最大14枚の画像合成が特徴。",
+                      "チェックすべき関連サイト":  "Google DeepMind(https://deepmind.google) / NotebookLM(https://notebooklm.google.com) / Genspark(https://www.genspark.ai)",
+                      "重要なワード":  "生成AIツール, トレンド",
+                      "今後深堀すべきポイント":  "生成AIツール の実務運用"
+                  },
+                  {
+                      "メディア":  "SHIFT AI Blog",
+                      "投稿日（推定）":  "2025-06-12",
+                      "タイトル／本文（抜粋）":  "TikTokでAIマーメイド動画を作成する方法！作成できない時の対処法や注意点も",
+                      "カテゴリ":  "生成AIツール",
+                      "URL":  "https://shift-ai.co.jp/blog/26438/",
+                      "メモ・要点":  "TikTokの「AIマーメイドエフェクト」は顔写真1枚で人魚姿に変身できる無料AI機能。",
+                      "チェックすべき関連サイト":  "TikTok(https://www.tiktok.com) / TikTok規約(https://www.tiktok.com/legal/page/row/terms-of-service/ja)",
+                      "重要なワード":  "生成AIツール",
+                      "今後深堀すべきポイント":  "生成AIツール の実務運用"
+                  }
+              ],
+    "TERAMACHI":  [
+                      {
+                          "メディア":  "X",
+                          "投稿日（推定）":  "2026-03-30",
+                          "タイトル／本文（抜粋）":  "Tera（TERAMACHI）：AIディレクター、コンテンツディレクター。",
+                          "カテゴリ":  "SEO/AI",
+                          "URL":  "https://x.com/tewriter_0327",
+                          "メモ・要点":  "SEOとマーケティングを融合させたCV重視のコンテンツ設計。AIによる効率化と人間力のシナジーを追求。",
+                          "チェックすべき関連サイト":  "https://x.com/seiichi_satoweb",
+                          "重要なワード":  "SEO, コンテンツディレクション, AI Director",
+                          "今後深堀すべきポイント":  "CV重視の高品質コンテンツ設計"
+                      },
+                      {
+                          "メディア":  "X",
+                          "投稿日（推定）":  "2026-03-30",
+                          "タイトル／本文（抜粋）":  "佐藤 誠一（TERAMACHI）：SEO \u0026 AIプロダクトエンジニア。",
+                          "カテゴリ":  "SEO/AI",
+                          "URL":  "https://x.com/seiichi_satoweb",
+                          "メモ・要点":  "11年のSEO経験とAIプロダクト開発。AI記事作成システムの構築、プロンプト開発の専門家。",
+                          "チェックすべき関連サイト":  "https://x.com/tewriter_0327",
+                          "重要なワード":  "AIエンジニアリング, SEO自動化, システム開発",
+                          "今後深堀すべきポイント":  "SEO自動化と売上成長の技術的実装"
+                      },
+                      {
+                          "メディア":  "SHIFT AI Blog",
+                          "投稿日（推定）":  "2025-12-06",
+                          "タイトル／本文（抜粋）":  "ChatGPTが文字数を守らない時の3つの対処法！プロンプトや注意点も紹介",
+                          "カテゴリ":  "ChatGPT/ノウハウ",
+                          "URL":  "https://shift-ai.co.jp/blog/43948/",
+                          "メモ・要点":  "制約を箇条書きで明示、短く書かせてから拡張、段落数を固定する3つの対処法を解説。",
+                          "チェックすべき関連サイト":  "ChatGPT(https://chatgpt.com)",
+                          "重要なワード":  "ChatGPT, ノウハウ",
+                          "今後深堀すべきポイント":  "ChatGPT の実務運用"
+                      },
+                      {
+                          "メディア":  "SHIFT AI Blog",
+                          "投稿日（推定）":  "2025-06-13",
+                          "タイトル／本文（抜粋）":  "ChatGPT登場でブログはオワコン？理由や活用のメリットデメリットを解説",
+                          "カテゴリ":  "ChatGPT/ノウハウ",
+                          "URL":  "https://shift-ai.co.jp/blog/26779/",
+                          "メモ・要点":  "専門性・一次情報・ストーリー性を備えた記事の価値。AIを効率化ツールとして活用するブログ運営。",
+                          "チェックすべき関連サイト":  "Google Search Central(https://developers.google.com/search) / Search Engine Land(https://searchengineland.com)",
+                          "重要なワード":  "ChatGPT, ノウハウ",
+                          "今後深堀すべきポイント":  "ChatGPT の実務運用"
+                      },
+                      {
+                          "メディア":  "SHIFT AI Blog",
+                          "投稿日（推定）":  "2025-01-21",
+                          "タイトル／本文（抜粋）":  "生成AIのハルシネーションとは？発生する原因と3つの対策をわかりやすく解説",
+                          "カテゴリ":  "AIキャリア・学習/ノウハウ",
+                          "URL":  "https://shift-ai.co.jp/blog/15186/",
+                          "メモ・要点":  "誤情報を事実のように出力する現象の対策。プロンプト改善・ファクトチェックなど。",
+                          "チェックすべき関連サイト":  "GUGA(https://guga.or.jp)",
+                          "重要なワード":  "AIキャリア・学習, ノウハウ",
+                          "今後深堀すべきポイント":  "AIキャリア・学習 の実務運用"
+                      },
+                      {
+                          "メディア":  "SHIFT AI Blog",
+                          "投稿日（推定）":  "2025-01-20",
+                          "タイトル／本文（抜粋）":  "AI翻訳の副業は稼げる？怪しいと言われる理由や実態・初心者が始める方法まで解説！",
+                          "カテゴリ":  "AI副業/ノウハウ",
+                          "URL":  "https://shift-ai.co.jp/blog/15156/",
+                          "メモ・要点":  "ポストエディット方式が主流。専門分野特化と効率的なAI活用で稼ぎやすくなる。",
+                          "チェックすべき関連サイト":  "クラウドワークス(https://crowdworks.jp) / ランサーズ(https://www.lancers.jp)",
+                          "重要なワード":  "AI副業, ノウハウ",
+                          "今後深堀すべきポイント":  "AI副業 の実務運用"
+                      }
+                  ],
+    "TOMOYA":  [
+                   {
+                       "メディア":  "X",
+                       "投稿日（推定）":  "2026-03-30",
+                       "タイトル／本文（抜粋）":  "安永 倫也（TOMOYA）プロフィール：SHIFT AIマネージャー、戦略参謀、ブランドアーキテクト。",
+                       "カテゴリ":  "AI/ビジネス",
+                       "URL":  "https://x.com/AIParaCareer",
+                       "メモ・要点":  "AIリテラシー教育（AIParaCareer）、SME向け戦略立案の専門家。",
+                       "チェックすべき関連サイト":  "https://x.com/shota7180",
+                       "重要なワード":  "戦略参謀, AIキャリアデザイン, Felo AI",
+                       "今後深堀すべきポイント":  "構造×美意識×ロジックの三位一体"
+                   },
+                   {
+                       "メディア":  "X",
+                       "投稿日（推定）":  "2026-03-30",
+                       "タイトル／本文（抜粋）":  "木内 翔大（TOMOYA/SHIFT AI代表）：SHIFT AI代表、エンジニア出身の起業家。",
+                       "カテゴリ":  "AI/ビジネス",
+                       "URL":  "https://x.com/shota7180",
+                       "メモ・要点":  "日本をAI先進国にするビジョン、大規模AIエコシステムの構築。",
+                       "チェックすべき関連サイト":  "https://shiftai.jp/",
+                       "重要なワード":  "SHIFT AI, 日本AI先進国化, 経営戦略",
+                       "今後深堀すべきポイント":  "グローバルなAIトレンドの国内実装"
+                   },
+                   {
+                       "メディア":  "X",
+                       "投稿日（推定）":  "2026-04-02",
+                       "タイトル／本文（抜粋）":  "YouTube公開：ターミナル完結！Claude Codeの使い方と設定 9分解説。",
+                       "カテゴリ":  "AI/教育",
+                       "URL":  "https://x.com/shota7180",
+                       "メモ・要点":  "導入から運用まで、エンジニア・非エンジニア問わず役立つターミナルAI活用術。",
+                       "チェックすべき関連サイト":  "https://www.youtube.com/@shota_kiuchi",
+                       "重要なワード":  "Claude Code, YouTube, 導入ガイド",
+                       "今後深堀すべきポイント":  "ターミナルAIの普及速度"
+                   },
+                   {
+                       "メディア":  "X",
+                       "投稿日（推定）":  "2026-04-01",
+                       "タイトル／本文（抜粋）":  "2026 AIトレンド通信 3月号リリース。テーマ『SaaSの死』を深く考察。",
+                       "カテゴリ":  "AI/ビジネス",
+                       "URL":  "https://x.com/shota7180",
+                       "メモ・要点":  "AIエージェントの普及によるSaaSモデルの変化と、次世代ビジネスモデルの展望。",
+                       "チェックすべき関連サイト":  "https://shiftai.jp/",
+                       "重要なワード":  "AIトレンド, SaaSの死, 戦略参謀",
+                       "今後深堀すべきポイント":  "ビジネス構造の地殻変動"
+                   },
+                   {
+                       "メディア":  "X",
+                       "投稿日（推定）":  "2026-03-31",
+                       "タイトル／本文（抜粋）":  "Claude Code × Codexプラグイン連携：ターミナル上での開発・レビューを最大効率化。",
+                       "カテゴリ":  "AI/開発",
+                       "URL":  "https://x.com/shota7180",
+                       "メモ・要点":  "ターミナル内だけでコード生成とレビューを完結させるシームレスな開発フロー。",
+                       "チェックすべき関連サイト":  "https://x.com/shota7180",
+                       "重要なワード":  "Codex, Claude Code, シームレス開発",
+                       "今後深堀すべきポイント":  "プラグインエコシステム"
+                   },
+                   {
+                       "メディア":  "X",
+                       "投稿日（推定）":  "2026-03-31",
+                       "タイトル／本文（抜粋）":  "Antigravity vs Cursor vs VS Code 頂上決戦。YANAGI, TERAMACHI, TOMOYAが各リーダーを担当。",
+                       "カテゴリ":  "AI/コーディング",
+                       "URL":  "https://x.com/shota7180",
+                       "メモ・要点":  "SHIFT AI主催のコーディングバトル。各AIツールの特性を活かした開発手法の競演。",
+                       "チェックすべき関連サイト":  "https://shiftai.jp/",
+                       "重要なワード":  "Antigravity, Cursor, コーディングバトル",
+                       "今後深堀すべきポイント":  "ツール選定基準の標準化"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-12-06",
+                       "タイトル／本文（抜粋）":  "SHIFT AIで沖縄からキャリアを変える！地方でも可能なAI副業の始め方",
+                       "カテゴリ":  "AIキャリア・学習/ノウハウ",
+                       "URL":  "https://shift-ai.co.jp/blog/43970/",
+                       "メモ・要点":  "1",
+                       "チェックすべき関連サイト":  "000本以上の動画教材・全47都道府県でのオフラインイベントにより地方在住者もAIスキル習得可能。",
+                       "重要なワード":  "SHIFT AI(https://shift-ai.co.jp) / GUGA(https://guga.or.jp)",
+                       "今後深堀すべきポイント":  "AIキャリア・学習, ノウハウ"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-08-21",
+                       "タイトル／本文（抜粋）":  "AIは公平に・そして一貫して判断できるのか？──最新研究から読み解くAIの倫理観",
+                       "カテゴリ":  "有識者インタビュー",
+                       "URL":  "https://shift-ai.co.jp/blog/34318/",
+                       "メモ・要点":  "生成AIは「帰結主義」と「義務論」の異なる倫理観を持ち制限がある。AIの倫理的判断能力に関する最新研究。",
+                       "チェックすべき関連サイト":  "モラル・マシン(https://www.moralmachine.net) / arXiv論文(https://arxiv.org/abs/2505.21479)",
+                       "重要なワード":  "有識者インタビュー",
+                       "今後深堀すべきポイント":  "有識者インタビュー の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-06-11",
+                       "タイトル／本文（抜粋）":  "【前編】「近い将来・日本に \"飢え\" が訪れる」鈴木宣弘が考える日本の食糧事情の未来とは？",
+                       "カテゴリ":  "AIビジネス活用",
+                       "URL":  "https://shift-ai.co.jp/blog/26673/",
+                       "メモ・要点":  "日本の食糧事情と未来に関する有識者の考察（記事取得エラー有）。",
+                       "チェックすべき関連サイト":  "",
+                       "重要なワード":  "AIビジネス活用",
+                       "今後深堀すべきポイント":  "AIビジネス活用 の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-04-12",
+                       "タイトル／本文（抜粋）":  "クラウドワークスAIは商用利用できる？安心して使う方法やおすすめ副業も紹介！",
+                       "カテゴリ":  "AIビジネス活用/ノウハウ",
+                       "URL":  "https://shift-ai.co.jp/blog/20579/",
+                       "メモ・要点":  "日本語対応で操作が簡単な生成AIツール。テキスト・画像・動画などを自動生成でき商用利用が可能。",
+                       "チェックすべき関連サイト":  "クラウドワークスAI(https://ordermaid.ai)",
+                       "重要なワード":  "AIビジネス活用, ノウハウ",
+                       "今後深堀すべきポイント":  "AIビジネス活用 の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-04-11",
+                       "タイトル／本文（抜粋）":  "【フロントランナーに聞く:02】AIが描く\"コーナーキックの理想形\"・リバプールFCも採用する最新テクノロジーの全貌",
+                       "カテゴリ":  "有識者インタビュー/インタビュー",
+                       "URL":  "https://shift-ai.co.jp/blog/19615/",
+                       "メモ・要点":  "Google DeepMind開発のTacticAIがコーナーキック防御戦術を90%精度で提案。",
+                       "チェックすべき関連サイト":  "Google DeepMind TacticAI(https://deepmind.google) / Barca Innovation Hub(https://barcainnovationhub.fcbarcelona.com)",
+                       "重要なワード":  "有識者インタビュー, インタビュー",
+                       "今後深堀すべきポイント":  "有識者インタビュー の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-04-09",
+                       "タイトル／本文（抜粋）":  "AIに奪われない仕事ランキング13選！特徴と将来も安心な職種とは？",
+                       "カテゴリ":  "AIキャリア・学習/ノウハウ",
+                       "URL":  "https://shift-ai.co.jp/blog/19791/",
+                       "メモ・要点":  "感情理解・創造力・個別対応が求められる職種はAIに奪われにくい。",
+                       "チェックすべき関連サイト":  "GUGA(https://guga.or.jp)",
+                       "重要なワード":  "AIキャリア・学習, ノウハウ",
+                       "今後深堀すべきポイント":  "AIキャリア・学習 の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-04-09",
+                       "タイトル／本文（抜粋）":  "クラウドワークス初心者は月収いくら稼げる？4つのコツで収入アップ",
+                       "カテゴリ":  "AI副業/ノウハウ",
+                       "URL":  "https://shift-ai.co.jp/blog/20054/",
+                       "メモ・要点":  "得意分野への特化・低単価案件の回避・継続案件の獲得・AIツール活用の4つのコツを紹介。",
+                       "チェックすべき関連サイト":  "クラウドワークス(https://crowdworks.jp) / GUGA(https://guga.or.jp)",
+                       "重要なワード":  "AI副業, ノウハウ",
+                       "今後深堀すべきポイント":  "AI副業 の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-04-08",
+                       "タイトル／本文（抜粋）":  "【2026年】東京の社会人向けAIスクール7選！教室選びの注意点も解説",
+                       "カテゴリ":  "AIキャリア・学習/ノウハウ",
+                       "URL":  "https://shift-ai.co.jp/blog/19885/",
+                       "メモ・要点":  "Winスクール・アビバ・ヒューマンアカデミーなど東京の社会人向けAIスクール7校を比較。",
+                       "チェックすべき関連サイト":  "Winスクール(https://www.winschool.jp) / アビバ(https://www.aviva.co.jp) / ヒューマンアカデミー(https://haa.athuman.com)",
+                       "重要なワード":  "AIキャリア・学習, ノウハウ",
+                       "今後深堀すべきポイント":  "AIキャリア・学習 の実務運用"
+                   },
+                   {
+                       "メディア":  "SHIFT AI Blog",
+                       "投稿日（推定）":  "2025-01-21",
+                       "タイトル／本文（抜粋）":  "生成AIを学べるおすすめスクール13校を徹底比較！損しないための選び方も解説",
+                       "カテゴリ":  "AIキャリア・学習/ノウハウ",
+                       "URL":  "https://shift-ai.co.jp/blog/15253/",
+                       "メモ・要点":  "レベル・サポート体制・学習期間と料金を選定基準として13校を比較。",
+                       "チェックすべき関連サイト":  "キカガク(https://www.kikagaku.ai) / DMM生成AI CAMP(https://generative-ai.web-camp.io) / ホリエモンAI学校(https://horiemon.ai) / スキルアップAI(https://www.skillupai.com)",
+                       "重要なワード":  "AIキャリア・学習, ノウハウ",
+                       "今後深堀すべきポイント":  "AIキャリア・学習 の実務運用"
+                   }
+               ],
+    "WEBER":  [
+                  {
+                      "メディア":  "X",
+                      "投稿日（推定）":  "2026-03-30",
+                      "タイトル／本文（抜粋）":  "WEBER：ウェビナー設計士、コミュニティ・マネージャー。",
+                      "カテゴリ":  "コミュニティ/デザイン",
+                      "URL":  "https://x.com/sesshuuX",
+                      "メモ・要点":  "雪舟館のウェビナー・コミュニティ運営を統括。参加者の体験設計と信頼構築の専門家。",
+                      "チェックすべき関連サイト":  "https://github.com/yukikiki2011-cloud/sesshuu-anima/tree/main/WEBER",
+                      "重要なワード":  "ウェビナー, コミュニティ設計, 体験デザイン",
+                      "今後深堀すべきポイント":  "オンライン・オフライン統合体験の構築"
+                  },
+                  {
+                      "メディア":  "SHIFT AI Blog",
+                      "投稿日（推定）":  "2025-12-06",
+                      "タイトル／本文（抜粋）":  "ChatGPTと友達になる方法！自分好みの友達にするためのプロンプトや注意点まで解説",
+                      "カテゴリ":  "ChatGPT/ノウハウ",
+                      "URL":  "https://shift-ai.co.jp/blog/43660/",
+                      "メモ・要点":  "プロンプト設定によりChatGPTを24時間対応の友達として活用。感情を気にせず相談でき話し方もカスタマイズ可能。",
+                      "チェックすべき関連サイト":  "ChatGPT(https://chatgpt.com)",
+                      "重要なワード":  "ChatGPT, ノウハウ",
+                      "今後深堀すべきポイント":  "ChatGPT の実務運用"
+                  },
+                  {
+                      "メディア":  "SHIFT AI Blog",
+                      "投稿日（推定）":  "2025-06-13",
+                      "タイトル／本文（抜粋）":  "AI業界第一人者による生成AIセミナー【無料・初心者向け】",
+                      "カテゴリ":  "AIキャリア・学習/ノウハウ",
+                      "URL":  "https://shift-ai.co.jp/blog/26774/",
+                      "メモ・要点":  "SHIFT AIが開催するAI初心者向け無料セミナー。累計申込10万人・満足度94.3%。",
+                      "チェックすべき関連サイト":  "BCG(https://www.bcg.com) / GUGA(https://guga.or.jp)",
+                      "重要なワード":  "AIキャリア・学習, ノウハウ",
+                      "今後深堀すべきポイント":  "AIキャリア・学習 の実務運用"
+                  },
+                  {
+                      "メディア":  "SHIFT AI Blog",
+                      "投稿日（推定）":  "2025-01-21",
+                      "タイトル／本文（抜粋）":  "AIを活用した副業スクールのおすすめ5選と後悔しないための5つのポイント",
+                      "カテゴリ":  "AI副業/ノウハウ",
+                      "URL":  "https://shift-ai.co.jp/blog/15129/",
+                      "メモ・要点":  "SHIFT AI・クラウドワークスAI道場などの5校を比較。主催者・副業種類・料金で選ぶ方法。",
+                      "チェックすべき関連サイト":  "クラウドワークスAI道場(https://dojo.crowdworks-ai.com) / DMM WEBCAMP(https://web-camp.io/courses/ai) / ホリエモンAI学校(https://horiemon.ai)",
+                      "重要なワード":  "AI副業, ノウハウ",
+                      "今後深堀すべきポイント":  "AI副業 の実務運用"
+                  }
+              ]
+};
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  for(var sheetName in db) {
+    var dataObjs = db[sheetName];
+    if(!dataObjs || dataObjs.length === 0) continue;
+    
+    // Some entries might be a single object if there's only 1 row, convert to array
+    if(!Array.isArray(dataObjs)) {
+        dataObjs = [dataObjs];
+    }
+    
+    var keys = Object.keys(dataObjs[0]);
+    var data = [keys];
+    for(var i=0; i<dataObjs.length; i++){
+      var obj = dataObjs[i];
+      var row = [];
+      for(var k=0; k<keys.length; k++){
+        row.push(obj[keys[k]] || "");
+      }
+      data.push(row);
+    }
+    var sheet = ss.getSheetByName(sheetName);
+    if(sheet) {
+      sheet.clear();
+      sheet.getRange(1, 1, data.length, data[0].length).setValues(data);
+    }
+  }
+}
