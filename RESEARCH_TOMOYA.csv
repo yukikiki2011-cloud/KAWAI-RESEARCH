@@ -1,23 +1,8 @@
-メディア,投稿日（推定）,タイトル／本文（抜粋）,カテゴリ,URL,メモ・要点,チェックすべき関連サイト,重要なワード,今後深堀すべきポイント
-X,2026-03-30,"安永 倫也（TOMOYA）プロフィール：SHIFT AIマネージャー、戦略参謀、ブランドアーキテクト。",AI/ビジネス,https://x.com/AIParaCareer,"AIリテラシー教育（AIParaCareer）、SME向け戦略立案の専門家。",https://x.com/shota7180,"戦略参謀, AIキャリアデザイン, Felo AI",構造×美意識×ロジックの三位一体
-X,2026-03-30,"木内 翔大（TOMOYA/SHIFT AI代表）：SHIFT AI代表、エンジニア出身の起業家。",AI/ビジネス,https://x.com/shota7180,"日本をAI先進国にするビジョン、大規模AIエコシステムの構築。",https://shiftai.jp/,"SHIFT AI, 日本AI先進国化, 経営戦略",グローバルなAIトレンドの国内実装
-X,2026-04-02,"YouTube公開：ターミナル完結！Claude Codeの使い方と設定 9分解説。",AI/教育,https://x.com/shota7180,"導入から運用まで、エンジニア・非エンジニア問わず役立つターミナルAI活用術。",https://www.youtube.com/@shota_kiuchi,"Claude Code, YouTube, 導入ガイド",ターミナルAIの普及速度
-X,2026-04-01,"2026 AIトレンド通信 3月号リリース。テーマ『SaaSの死』を深く考察。",AI/ビジネス,https://x.com/shota7180,"AIエージェントの普及によるSaaSモデルの変化と、次世代ビジネスモデルの展望。",https://shiftai.jp/,"AIトレンド, SaaSの死, 戦略参謀",ビジネス構造の地殻変動
-X,2026-03-31,"Claude Code × Codexプラグイン連携：ターミナル上での開発・レビューを最大効率化。",AI/開発,https://x.com/shota7180,"ターミナル内だけでコード生成とレビューを完結させるシームレスな開発フロー。",https://x.com/shota7180,"Codex, Claude Code, シームレス開発",プラグインエコシステム
-X,2026-03-31,"Antigravity vs Cursor vs VS Code 頂上決戦。YANAGI, TERAMACHI, TOMOYAが各リーダーを担当。",AI/コーディング,https://x.com/shota7180,"SHIFT AI主催のコーディングバトル。各AIツールの特性を活かした開発手法の競演。",https://shiftai.jp/,"Antigravity, Cursor, コーディングバトル",ツール選定基準の標準化
-SHIFT AI Blog,2025-12-06,SHIFT AIで沖縄からキャリアを変える！地方でも可能なAI副業の始め方,AIキャリア・学習/ノウハウ,https://shift-ai.co.jp/blog/43970/,1,000本以上の動画教材・全47都道府県でのオフラインイベントにより地方在住者もAIスキル習得可能。,"SHIFT AI(https://shift-ai.co.jp) / GUGA(https://guga.or.jp)","AIキャリア・学習, ノウハウ",AIキャリア・学習 の実務運用
-SHIFT AI Blog,2025-08-21,AIは公平に・そして一貫して判断できるのか？──最新研究から読み解くAIの倫理観,有識者インタビュー,https://shift-ai.co.jp/blog/34318/,生成AIは「帰結主義」と「義務論」の異なる倫理観を持ち制限がある。AIの倫理的判断能力に関する最新研究。,"モラル・マシン(https://www.moralmachine.net) / arXiv論文(https://arxiv.org/abs/2505.21479)",有識者インタビュー,有識者インタビュー の実務運用
-SHIFT AI Blog,2025-06-11,【前編】「近い将来・日本に "飢え" が訪れる」鈴木宣弘が考える日本の食糧事情の未来とは？,AIビジネス活用,https://shift-ai.co.jp/blog/26673/,日本の食糧事情と未来に関する有識者の考察（記事取得エラー有）。,,AIビジネス活用,AIビジネス活用 の実務運用
-SHIFT AI Blog,2025-04-12,クラウドワークスAIは商用利用できる？安心して使う方法やおすすめ副業も紹介！,AIビジネス活用/ノウハウ,https://shift-ai.co.jp/blog/20579/,日本語対応で操作が簡単な生成AIツール。テキスト・画像・動画などを自動生成でき商用利用が可能。,"クラウドワークスAI(https://ordermaid.ai)","AIビジネス活用, ノウハウ",AIビジネス活用 の実務運用
-SHIFT AI Blog,2025-04-11,【フロントランナーに聞く:02】AIが描く"コーナーキックの理想形"・リバプールFCも採用する最新テクノロジーの全貌,有識者インタビュー/インタビュー,https://shift-ai.co.jp/blog/19615/,Google DeepMind開発のTacticAIがコーナーキック防御戦術を90%精度で提案。,"Google DeepMind TacticAI(https://deepmind.google) / Barca Innovation Hub(https://barcainnovationhub.fcbarcelona.com)","有識者インタビュー, インタビュー",有識者インタビュー の実務運用
-SHIFT AI Blog,2025-04-09,AIに奪われない仕事ランキング13選！特徴と将来も安心な職種とは？,AIキャリア・学習/ノウハウ,https://shift-ai.co.jp/blog/19791/,感情理解・創造力・個別対応が求められる職種はAIに奪われにくい。,"GUGA(https://guga.or.jp)","AIキャリア・学習, ノウハウ",AIキャリア・学習 の実務運用
-SHIFT AI Blog,2025-04-09,クラウドワークス初心者は月収いくら稼げる？4つのコツで収入アップ,AI副業/ノウハウ,https://shift-ai.co.jp/blog/20054/,得意分野への特化・低単価案件の回避・継続案件の獲得・AIツール活用の4つのコツを紹介。,"クラウドワークス(https://crowdworks.jp) / GUGA(https://guga.or.jp)","AI副業, ノウハウ",AI副業 の実務運用
-SHIFT AI Blog,2025-04-08,【2026年】東京の社会人向けAIスクール7選！教室選びの注意点も解説,AIキャリア・学習/ノウハウ,https://shift-ai.co.jp/blog/19885/,Winスクール・アビバ・ヒューマンアカデミーなど東京の社会人向けAIスクール7校を比較。,"Winスクール(https://www.winschool.jp) / アビバ(https://www.aviva.co.jp) / ヒューマンアカデミー(https://haa.athuman.com)","AIキャリア・学習, ノウハウ",AIキャリア・学習 の実務運用
-SHIFT AI Blog,2025-01-21,生成AIを学べるおすすめスクール13校を徹底比較！損しないための選び方も解説,AIキャリア・学習/ノウハウ,https://shift-ai.co.jp/blog/15253/,レベル・サポート体制・学習期間と料金を選定基準として13校を比較。,"キカガク(https://www.kikagaku.ai) / DMM生成AI CAMP(https://generative-ai.web-camp.io) / ホリエモンAI学校(https://horiemon.ai) / スキルアップAI(https://www.skillupai.com)","AIキャリア・学習, ノウハウ",AIキャリア・学習 の実務運用
-SHIFT AI Blog,2026-04-09,G検定とは？難易度や勉強法まで解説,AIキャリア・学習,https://shift-ai.co.jp/blog/6922/,"G検定の最新シラバス対応、効率的な学習ロードマップの提示",https://guga.or.jp,"G検定, 勉強法, AIキャリア",試験対策の標準化
-SHIFT AI Blog,2026-04-09,Claude CodeのCLAUDE.mdとは？書き方やコツ,Claude,https://shift-ai.co.jp/blog/6910/,"CLAUDE.mdによるプロジェクトルールの徹底管理と自動化術",https://claude.ai,"Claude Code, CLAUDE.md, プロンプト",ルールベースの開発加速
-SHIFT AI Blog,2026-04-05,Claude CodeをWindowsにインストールする方法,Claude,https://shift-ai.co.jp/blog/6895/,"WSL2やPowerShell環境でのClaude Code導入の注意点",https://shift-ai.co.jp,"Claude Code, Windows, WSL2",開発環境の民主化
-X,2026-04-01,Claude Code発表！Anthropicのエンジニア向けCLIツールの衝撃,Claude/トレンド,https://x.com/shota7180/status/2033621,"ターミナル完結型AIの夜明け。開発効率が劇的に変わる",https://anthropic.com,"Claude Code, Anthropic, エンジニア",AIエージェントの夜明け
-X,2026-04-04,国産LLM「LLM-jp-4」公開記念解説,国産LLM/トレンド,https://x.com/shota7180/status/2040561,"国立情報学研究所による175Bパラメータモデルの可能性",https://llm-jp.nii.ac.jp/,"LLM-jp-4, 国産LLM, NII",日本語特化AIの実力
-X,2026-04-07,TV出演告知：MC永野・カズレーザー番組でAI解説,メディア/トレンド,https://x.com/shota7180/status/2041551,"地上波でのAI啓蒙。AIが一般層へ浸透する速度の速さ",https://www.tv-asahi.co.jp/,"TV出演, 永野, カズレーザー",AIの社会浸透
-X,2026-04-13,最新AIニュースまとめ動画公開（本日）,YouTube/トレンド,https://x.com/shota7180/status/2043451,"週刊AIトレンド。主要LLMのアップデートを一気見",https://www.youtube.com/@shota_kiuchi,"AIニュース, YouTube, 週刊",情強への最短ルート
+﻿メチEア,投稿日E推定！EタイトルE本斁E抜粋！EカチEリ,URL,メモ・要点,チェチEすべき関連サイチE重要なワーチE今後深堀すべきEインチE
+X,2026-04-13,Claude Codeで「frontend-design skills」を使い動的LP生成デモ,AI Tool / Web Design,https://x.com/shota7180/status/2043528354171965722,自然言語の指示だけで、デザイン性の高い動的なLPを瞬時に生成する実例,https://claude.ai,Claude Code, LP生成, デザイントレンド, スピード感のあるプロトタイピングの具現化
+SHIFT AI Blog,2026-04-10,G検定最短合格ロードマップ！最新シラバス対応勉強法,AIキャリア,https://shift-ai.co.jp/blog/6922/,G検定対策の決定版。効率的な学習法を解説。,https://guga.or.jp,G検定, 学習法, 最新シラバス, 教育の標準化
+SHIFT AI Blog,2026-03-28,Claude Code 導入ガイド：エンジニアのための全コマンド解説,Claude/ノウハウ,https://shift-ai.co.jp/blog/53404/,ターミナル完結のAI開発体験を徹底詳解。,https://anthropic.com,Claude Code, ノウハウ, ツール, 開発効率の極大化
+SHIFT AI Blog,2025-12-06,2025年AIトレンド総括：エージェントが実務を変えた1年,最新トレンド,https://shift-ai.co.jp/blog/43948/,AIエージェントの普及によるビジネスモデルの変遷。,https://shiftai.jp,トレンド, 戦略, エージェント, ビジネス変革
+SHIFT AI Blog,2025-08-21,画像生成AI「Nano Banana Pro」の衝撃。デザイン業務の8割が自動化へ,AIデザイン,https://shift-ai.co.jp/blog/34141/,日本語プロンプト対応の高品質画像生成ツールの活用。,https://nano-banana.ai,デザイン, AI, 画像生成, クリエイティブの民主化
+SHIFT AI Blog,2025-05-14,Google I/O 2025 速報：Gemini 2.0 が全サービスに統合,AIニュース,https://shift-ai.co.jp/blog/20045/,マルチモーダルAIが生活の隅々まで行き渡る未来。,https://google.com,Gemini, ニュース, Google, AIインフラの完成
+SHIFT AI Blog,2025-01-15,2025年 AI時代の幕開け。木内翔大が語る未来予測,経営/戦略,https://shift-ai.co.jp/blog/15186/,SHIFT AIが目指す「日本をAI先進国に」のビジョン。,https://shiftai.jp,戦略, 経営, 未来予測, AI社会の実装
