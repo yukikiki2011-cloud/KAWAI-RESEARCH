@@ -31,7 +31,14 @@
 | リポジトリ名 | SESSHUU-ANIMA-RESEARCH |
 | URL | https://github.com/yukikiki2011-cloud/SESSHUU-ANIMA-RESEARCH |
 | 公開設定 | Public |
-| **監視対象 (毎日)** | 各メンバーの X 投稿、および [Claude Code Guide](https://claude-code-dictionary.pages.dev/) |
+| **監視対象 (共通)** | [Claude Code Guide](https://claude-code-dictionary.pages.dev/) |
+| **監視対象 (KAWAI)** | X (`@kawai_design`), note (`note.com/kawaidesign`), Threads (`@kawai_design_ig`), Voicy |
+| **監視対象 (YANAGI)** | X (`@ryonihonyanagi`, `@yanagi_shiftai`) |
+| **監視対象 (TOMOYA)** | X (`@AIParaCareer`) |
+| **監視対象 (TERAMACHI)** | X (`@tewriter_0327`), note (`note.com/tera684`), `webwriter-school.net` |
+| **監視対象 (WEBER)** | X (`@sesshuuX`) |
+| **監視対象 (KIUCHI)** | X (`@shota7180`), YouTube (`@shota_kiuchi`) |
+| **監視対象 (SATOU)** | X (`@seiichi_satoweb`), note (`note.com/seiichi_sato919`) |
 
 ---
 
