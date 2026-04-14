@@ -44,7 +44,8 @@
 
 ## 自動更新スケジュール
 
-毎日 **23:00 JST** にリモートエージェントが、各メンバーの新着投稿および **Claude Code 辞典の更新**をリサーチして追記します。
+毎日 **15:00 JST** にリモートエージェントが、各メンバーの新着投稿および **Claude Code 辞典の更新**をリサーチして追記します。
+さらに、全リサーチが完了した **16:00 JST** を目途に、今朝（または前回）の実行完了を再確認するコマンドを追加実行します。
 
 - トリガーID: `trig_0166rVRMVYRfjSSZtn7mxivN`
 - 管理: https://claude.ai/code/scheduled/trig_0166rVRMVYRfjSSZtn7mxivN
