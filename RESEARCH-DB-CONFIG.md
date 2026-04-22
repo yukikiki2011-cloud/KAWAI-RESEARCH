@@ -33,6 +33,13 @@
     雪舟様が「今日のTASK」を確認した際、過去24時間の全メンバーのリサーチ結果（新着のみ）をCSVから抽出し、冒頭で報告すること。データが不足している場合は即座にブラウザスキャンを実行してから報告する。
 8.  **デザインワーク時のKAWAIスキル活用（必須）**: 
     雪舟様のデザインワーク（スライド制作、図解、バナー、Webデザイン等）を行う際は、必ず `KAWAI/` フォルダ内のスキル（SKILL_DIAGRAM.md, SKILL_SLIDE_BUILDER.md, TOOLS.md）を参照し、KAWAIの設計原則・ツール・テンプレートを活用すること。
+9.  **SHIFT AI Blog監視プロトコル（2026-04-22 決定）**:
+    `https://shift-ai.co.jp/blog/` はチーム全体の共通監視対象（KIUCHIのメディア事業）。
+    - **収集**: 既存バッチ処理（10:00/15:00/23:00）に統合し `RESEARCH_SHIFTAI_BLOG.csv` に蓄積
+    - **解釈・振り分け（週1・月曜）**: TOMOYAが記事を精査し、執筆者別・テーマ別に各メンバーCSVへ振り分け
+    - **SKILLS反映**: Snow指示のもと該当メンバーのSKILLS.mdを更新、KUROが承認
+    - **戦略的示唆**: SHIFT AIとしての動向（新講座・AI動向・イベント告知等）はTOMOYAがsesshuu-animaチームへ報告
+    - **KIUCHIとの関係**: KIUCHIは同ブログの代表（木内翔大CEO）。ブログの方針変更はチーム全体への影響大。要注目。
 
 ---
 
@@ -44,12 +51,13 @@
 | URL | https://github.com/yukikiki2011-cloud/SESSHUU-ANIMA-RESEARCH |
 | 公開設定 | Public |
 | **監視対象 (共通)** | [Claude Code Guide](https://claude-code-dictionary.pages.dev/) |
+| **監視対象 (共通・チーム全体)** | **[SHIFT AI TIMES Blog](https://shift-ai.co.jp/blog/)** — KIUCHIのメディア事業。KIUCHI・YANAGI・TERAMACHI・TOMOYA等が執筆。チーム全体のAIトレンド基準点。`RESEARCH_SHIFTAI_BLOG.csv` に蓄積、TOMOYAが週1で各メンバーCSVへ振り分け |
 | **監視対象 (KAWAI)** | X (`@kawai_design`), note (`note.com/kawaidesign`), Threads (`@kawai_design_ig`), Voicy |
 | **監視対象 (YANAGI)** | X (`@ryonihonyanagi`, `@yanagi_shiftai`) |
 | **監視対象 (TOMOYA)** | X (`@AIParaCareer`) |
 | **監視対象 (TERAMACHI)** | X (`@tewriter_0327`), note (`note.com/tera684`), `webwriter-school.net` |
 | **監視対象 (WEBER)** | X (`@sesshuuX`) |
-| **監視対象 (KIUCHI)** | X (`@shota7180`), YouTube (`@shota_kiuchi`) |
+| **監視対象 (KIUCHI)** | X (`@shota7180`), YouTube (`@shota_kiuchi`), SHIFT AI Blog (共通CSVで管理) |
 | **監視対象 (SATOU)** | X (`@seiichi_satoweb`), note (`note.com/seiichi_sato919`) |
 
 ---
