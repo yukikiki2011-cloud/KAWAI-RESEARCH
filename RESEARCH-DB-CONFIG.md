@@ -62,6 +62,29 @@
 
 ---
 
+## kawai-official.pages.dev 定期監視プロトコル（2026-04-22 追加）
+
+`https://kawai-official.pages.dev/` はKAWAIの公式サイト（SKILLS.mdのソースオブトゥルース）。
+
+```powershell
+# 既存23:00バッチに統合 — kawai公式サイト変更検知
+$url = "https://kawai-official.pages.dev/"
+$logFile = "$PSScriptRoot\raw_kawai_official.txt"
+try {
+    $res = Invoke-WebRequest -Uri $url -TimeoutSec 10 -UseBasicParsing
+    $ts = Get-Date -Format "yyyy-MM-dd HH:mm"
+    "$ts | HTTP $($res.StatusCode) | Len: $($res.Content.Length)" | Out-File $logFile -Append
+} catch {
+    "$(Get-Date -Format 'yyyy-MM-dd HH:mm') | ERROR: $_" | Out-File $logFile -Append
+}
+```
+
+- **実行頻度:** 23:00バッチに統合（日1回）
+- **変更検知:** Content-Length変化または HTTP非200でアラート
+- **アクション:** 変更あり → KAWAI/SKILLS.md更新確認をSnowが実施
+
+---
+
 ## 自動更新スケジュール（v3.1 確定版 2026-04-17）
 
 ### 実行スケジュール（JST）
