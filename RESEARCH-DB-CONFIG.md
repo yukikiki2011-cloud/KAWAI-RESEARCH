@@ -10,6 +10,9 @@
 - `RESEARCH_WEBER.csv`
 - `RESEARCH_KIUCHI.csv`
 - `RESEARCH_SATOU.csv`
+- `RESEARCH_ANDUU.csv` （2026-05-03追加）
+- `RESEARCH_KOTLER.csv` （監視先未定・保留中）
+- `RESEARCH_MONEY.csv` （監視先未定・保留中）
 
 ---
 
@@ -58,7 +61,10 @@
 | **監視対象 (TERAMACHI)** | X (`@tewriter_0327`), note (`note.com/tera684`), `webwriter-school.net` |
 | **監視対象 (WEBER)** | X (`@sesshuuX`) |
 | **監視対象 (KIUCHI)** | X (`@shota7180`), YouTube (`@shota_kiuchi`), SHIFT AI Blog (共通CSVで管理) |
-| **監視対象 (SATOU)** | X (`@seiichi_satoweb`), note (`note.com/seiichi_sato919`) |
+| **監視対象 (SATOU)** | X (`@seiichi_satoweb`), note (`note.com/seiichi_sato919`) ※TERAMACHIの知識源として継続 |
+| **監視対象 (ANDUU)** | X (`@andodo1029`) ※SHIFT AI Claude Code講師・実在人物（2026-05-03追加） |
+| **監視対象 (KOTLER)** | **未定** ※マーケティング知識源の選定が必要（2026-05-03追加・保留） |
+| **監視対象 (MONEY)** | **未定** ※経理・財務知識源の選定が必要（2026-05-03追加・保留） |
 
 ---
 
