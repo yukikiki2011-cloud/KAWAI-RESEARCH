@@ -10,9 +10,9 @@
 - `RESEARCH_WEBER.csv`
 - `RESEARCH_KIUCHI.csv`
 - `RESEARCH_SATOU.csv`
-- `RESEARCH_ANDUU.csv` （2026-05-03追加）
-- `RESEARCH_KOTLER.csv` （監視先未定・保留中）
-- `RESEARCH_MONEY.csv` （監視先未定・保留中）
+- `RESEARCH_ANDUU.csv` （X/@andodo1029）
+- `RESEARCH_KOTLER.csv` （@KotlerMarketing / MarkeZine / #AIマーケティング検索）
+- `RESEARCH_MONEY.csv` （@sama/@satyanadella / 日経RSS / #AI副業検索 / note週次）
 
 ---
 
@@ -62,9 +62,9 @@
 | **監視対象 (WEBER)** | X (`@sesshuuX`) |
 | **監視対象 (KIUCHI)** | X (`@shota7180`), YouTube (`@shota_kiuchi`), SHIFT AI Blog (共通CSVで管理) |
 | **監視対象 (SATOU)** | X (`@seiichi_satoweb`), note (`note.com/seiichi_sato919`) ※TERAMACHIの知識源として継続 |
-| **監視対象 (ANDUU)** | X (`@andodo1029`) ※SHIFT AI Claude Code講師・実在人物（2026-05-03追加） |
-| **監視対象 (KOTLER)** | **未定** ※マーケティング知識源の選定が必要（2026-05-03追加・保留） |
-| **監視対象 (MONEY)** | **未定** ※経理・財務知識源の選定が必要（2026-05-03追加・保留） |
+| **監視対象 (ANDUU)** | X (`@andodo1029`) ※SHIFT AI Claude Code講師・実在人物 |
+| **監視対象 (KOTLER)** | 【大局観】X (`@KotlerMarketing`) / Marketing Week RSS（marketingweek.com）<br>【日々実務】X検索 `#AIマーケティング #SNS運用 #コンテンツマーケ` / MarkeZine RSS（markezine.jp/rss/） |
+| **監視対象 (MONEY)** | 【大局観】X (`@sama` `@satyanadella`) / 日経電子版 RSS（経済・テクノロジー）<br>【AIで稼ぐ】X検索 `#AI副業 #AIコンサル #フリーランスAI #Claude` / note `#AIビジネス`（週次手動・KANDA） / KIUCHI系既存バッチ統合 |
 
 ---
 
